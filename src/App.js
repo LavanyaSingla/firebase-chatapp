@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {Box,Button,Container,HStack,VStack,Input} from '@chakra-ui/react'
+import Message from './components/Message';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box bg={"red.30"}>
+      <Container h={"100vh"} bg={"white"}>
+        <VStack h="full" paddingY={"4"}> 
+        <Button w={"full"} colorScheme={"red"} >Logout</Button>
+       
+        <VStack w={"full"} h="full" overflowY={"auto"}></VStack>
+        <Message text={"Sample "}/>
+          <form style={{width:"100%"}}>
+          <HStack>
+            <Input placeholder='Enter your message'/>
+            <Button type="submit" colorScheme={"purple"}>Send</Button>
+            </HStack>
+          </form>
+          </VStack>
+      </Container>
+    </Box>
   );
 }
 
