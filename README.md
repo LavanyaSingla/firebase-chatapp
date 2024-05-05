@@ -1,5 +1,9 @@
 ### This is a basic chatapp based on ReactJs, ChakraUI, and Firebase Authentiation.
+
 ![Alt Text](https://github.com/LavanyaSingla/firebase-chatapp/blob/master/image.png)
+
+You can find the deployed application here:https://6637aea72788c4f70d1f40c4--strong-panda-35fb24.netlify.app/
+
 
 In the project directory, you can run:
 `npm start`
